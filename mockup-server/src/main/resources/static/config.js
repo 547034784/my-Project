@@ -1,0 +1,1 @@
+var serverUri = "http://localhost:80";
