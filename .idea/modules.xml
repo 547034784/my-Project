@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/model-server/demo.iml" filepath="$PROJECT_DIR$/model-server/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mockup-manager.iml" filepath="$PROJECT_DIR$/.idea/mockup-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mockup-server/mockup-server.iml" filepath="$PROJECT_DIR$/mockup-server/mockup-server.iml" />
     </modules>
   </component>
 </project>

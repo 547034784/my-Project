@@ -2,9 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e74c557-de29-4c0b-aceb-745911cf094f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/model-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_44.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/aaaa.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/aaaa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/app/dapp.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/app/dapp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/app/small.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/app/small.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/app/uapp.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/app/uapp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/app/web.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/app/web.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/app/wechat.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/app/wechat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/js/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/js/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/service/addnavigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/service/addnavigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/service/jiankong.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/service/jiankong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/service/piaowu.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/service/piaowu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/service/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/service/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/service/quality.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/service/quality.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/service/system.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/service/system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/service/ziyuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/service/ziyuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-manager/yanfa.html" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-manager/yanfa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/MockupServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/controller/MainInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/MainInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/controller/MainNameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/MainNameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/controller/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/NavigationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/controller/VersionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/VersionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/dao/MainINameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/dao/MainINameRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/dao/MainInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/dao/MainInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/dao/NavigationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/dao/NavigationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/dao/VersionDesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/dao/VersionDesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/dao/VersionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/dao/VersionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/entity/MainInfoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/entity/MainInfoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/entity/MainNameEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/entity/MainNameEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/entity/NavigationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/entity/NavigationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/entity/VersionDesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/entity/VersionDesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/entity/VersionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/entity/VersionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/IMainInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/IMainInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/IMainNameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/IMainNameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/INavigationSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/INavigationSevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/IVersionDesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/IVersionDesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/IVersionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/IVersionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/impl/MainInfoEntityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/impl/MainInfoEntityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/impl/MainNameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/impl/MainNameServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/impl/NavigationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/impl/NavigationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/impl/VersionDesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/impl/VersionDesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/java/modelserver/demo/service/impl/VersionServiceimpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/service/impl/VersionServiceimpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mockup-server/src/test/java/modelserver/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mockup-server/src/test/java/modelserver/demo/MockupServerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yanfa.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/model-server/target/" />
+    <ignored path="$PROJECT_DIR$/mockup-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,19 +106,86 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/model-server/pom.xml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="75">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.20.RELEASE/spring-boot-autoconfigure-1.5.20.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/WebMvcProperties.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/service/quality.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>removeAbandoned</find>
+      <find>yanfa</find>
+      <find>typeid</find>
+      <find>addnav</find>
+      <find>localhost:8080</find>
+      <find>&quot;http://localhost:8080</find>
+      <find>localhost</find>
+      <find>static-path-pattern</find>
+      <find>full</find>
+      <find>full-screen</find>
+      <find>full-screen-image-3</find>
+      <find>assets/img</find>
+      <find>favicon</find>
+      <find>农行清分系统V1.0</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>serverUri</replace>
+      <replace>serverUri = &quot;</replace>
+      <replace>serverUri + &quot;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>G:\workplace\mockup-manager\mockup-server</dir>
+      <dir>G:\workplace\mockup-manager\mockup-server\src\main\resources\static</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +193,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/model-server/pom.xml" />
+        <option value="$PROJECT_DIR$/yanfa.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/aaaa.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/service/jiankong.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/service/quality.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/service/product.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/service/ziyuan.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/service/system.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/service/piaowu.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/service/jiankong.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/service/ziyuan.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/service/piaowu.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/aaaa.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/app/dapp.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/app/web.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/app/wechat.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/app/uapp.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/app/small.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/service/addnavigation.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/service/product.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/service/system.html" />
+        <option value="$PROJECT_DIR$/mockup-manager/service/quality.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/app/web.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/app/dapp.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/app/uapp.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/app/small.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/app/wechat.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/config.js" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/service/addnavigation.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/templates/js/main.js" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/VersionController.java" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/MainNameController.java" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/MainInfoController.java" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/NavigationController.java" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/mockup-server/pom.xml" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/FreeMakerConfiguration.java" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/config.js" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/service/addnavigation.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/service/jiankong.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/service/quality.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/service/product.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/service/ziyuan.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/app/wechat.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/app/small.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/service/system.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/service/piaowu.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/app/uapp.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/app/dapp.html" />
+        <option value="$PROJECT_DIR$/mockup-server/src/main/resources/static/app/web.html" />
       </list>
     </option>
   </component>
@@ -58,16 +267,17 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
-    <option name="y" value="-2" />
-    <option name="width" value="1148" />
-    <option name="height" value="624" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1401" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -79,24 +289,114 @@
             <path>
               <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="model-server" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="bcpt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="picture" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mockup-manager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mockup-manager" type="462c0819:PsiDirectoryNode" />
+              <item name="mockup-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/model-server/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mockup-server/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="D:/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bcpt" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\workplace\mockup-manager\mockup-server\src\main\resources\static\picture" />
+      <recent name="G:\workplace\mockup-manager\mockup-server\src\main\resources\templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -110,7 +410,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
+  <component name="RunManager" selected="Spring Boot.mockup-server">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -136,9 +436,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="modelserver.demo.DemoApplication" />
+    <configuration name="mockup-server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mockup-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.MockupServer" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,7 +462,40 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="60026" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="5114" />
+      </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -194,53 +529,238 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.mockup-server" />
+      <item itemvalue="Tomcat Server.tomcat" />
+    </list>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="JRebel" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16355982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23752254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="CheckStyle" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" />
-      <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="Problems" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32991013" />
+      <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991013" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49969932" visible="true" weight="0.3992298" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" weight="0.32952496" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" />
+      <window_info anchor="bottom" id="CheckStyle" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50030065" side_tool="true" weight="0.3992298" />
+      <window_info anchor="bottom" id="Statistic" order="13" />
+      <window_info anchor="bottom" id="SonarLint" order="14" />
+      <window_info anchor="bottom" id="Problems" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="bottom" id="Version Control" order="17" weight="0.24903722" />
+      <window_info anchor="bottom" id="JRebel Console" order="18" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32952496" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32952496" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/model-server/pom.xml">
+    <entry file="file://$PROJECT_DIR$/model-server/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="275">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/java/com/MockupServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/navigation.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-manager/js/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="750" column="39" lean-forward="true" selection-start-line="750" selection-start-column="39" selection-end-line="750" selection-end-column="39" />
+          <folding>
+            <element signature="e#30#38#1" expanded="true" />
+            <element signature="e#38#46#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-manager/aaaa.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-manager/service/addnavigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/js/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/app/web.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-manager/yanfa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="282" column="25" selection-start-line="282" selection-start-column="25" selection-end-line="282" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/service/addnavigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="265" column="30" selection-start-line="265" selection-start-column="30" selection-end-line="265" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="381" column="36" lean-forward="true" selection-start-line="381" selection-start-column="36" selection-end-line="381" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-manager/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/NavigationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/mockup/controller/VersionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.20.RELEASE/spring-boot-autoconfigure-1.5.20.RELEASE.jar!/org/springframework/boot/autoconfigure/web/WebMvcProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="131" column="16" selection-start-line="131" selection-start-column="16" selection-end-line="131" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/java/com/bcpt/FreeMakerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.20.RELEASE/spring-boot-autoconfigure-1.5.20.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/web/WebMvcProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/picture/full-screen-image-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/picture/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/service/quality.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mockup-server/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
