@@ -84,7 +84,6 @@ function addnewmodel() {
 
 //修改版本方法,mainId是模块id，versionId是版本id，versionDesId是版本描述id
 function updatemodel() {
-    $("#myModal1").modal('hide');
     var mainId = $("#changeid").val();
     var versionId = $("#updateversion").val();
     var versionDesId = $("#descriptionid").val();
@@ -92,24 +91,31 @@ function updatemodel() {
     var versionName = $("#updatename").val();
     var versionDesName = $("#updatedes").val();
     var versionURL = $("#updaturl").val();
-    $.ajax({
-        type: "POST",
-        url: serverUri + "/updateVersion",
-        data: {
-            mainId: mainId,
-            versionId: versionId,
-            versionDesId: versionDesId,
-            versionDate: versionDate,
-            versionName: versionName,
-            versionDesName: versionDesName,
-            versionURL: versionURL
-        },
-        dataType: "json",
-    });
-    //刷新当前页面
-    setTimeout(function () {
-        changmodel(typeid, title);
-    }, 500);
+    if ( versionId == "请选择"){
+        alert("请选择版本")
+    }
+    else {
+        $.ajax({
+            type: "POST",
+            url: serverUri + "/updateVersion",
+            data: {
+                mainId: mainId,
+                versionId: versionId,
+                versionDesId: versionDesId,
+                versionDate: versionDate,
+                versionName: versionName,
+                versionDesName: versionDesName,
+                versionURL: versionURL
+            },
+            dataType: "json",
+        });
+        $("#myModal1").modal('hide');
+        //刷新当前页面
+        setTimeout(function () {
+            changmodel(typeid, title);
+        }, 500);
+
+    }
 
 }
 
@@ -190,11 +196,11 @@ function changmodel(id, name) {
                     "<div class='header'>" +
                     //资源路径，模块名称
                     "<a href='" + info.url + "' class='col-md-3'>" + info.headName + "</a>" +
-                    "<input type='button' class='btn btn-primary btn-sm  col-md-offset-8' value='编辑模块' data-toggle='modal' data-target='#myModa5' onclick='updateMain(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-sm' value='编辑模块' data-toggle='modal' data-target='#myModa5' onclick='updateMain(" + info.id + ")' style='margin-left: 66%'>" +
                     //研发时间
                     "<p class='category'>研发时间：" + begintime + "至" + endtime + "</p>" +
-                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-8' value='添加版本' data-toggle='modal' data-target='#myModal2' onclick='setid(" + info.id + ")'>" +
-                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-1' value='修改版本' data-toggle='modal' data-target='#myModal1' onclick='initchangemodal(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-xs' value='添加版本' data-toggle='modal' data-target='#myModal2' onclick='setid(" + info.id + ")' style='margin-left: 83.5%'>" +
+                    "<input type='button' class='btn btn-primary btn-xs' value='修改版本' data-toggle='modal' data-target='#myModal1' onclick='initchangemodal(" + info.id + ")' style='margin-left: 2%'>" +
                     "</div>" +
                     "<div class='content'>" +
                     "<div class='row'>" +
@@ -202,7 +208,7 @@ function changmodel(id, name) {
                     //生成动态id,根据id将不同的描述信息渲染到不同的模块下面
                     "<ul id='" + info.id + "'>" +
                     "</ul> " +
-                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-3' value='模块信息' data-toggle='modal' data-target='#myModal3' onclick='setid(" + info.id + ")'>" +
+
                     " </div>" +
                     "<div class='col-md-8 col-md-offset-1'>" +
                     "<div class='card'>" +
@@ -222,6 +228,7 @@ function changmodel(id, name) {
                     "</div>" +
                     "</div>" +
                     "</div>" +
+                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-1' value='模块信息' data-toggle='modal' data-target='#myModal3' onclick='setid(" + info.id + ")'>" +
                     "</div>" +
                     "</div>" +
                     "</div>" +
@@ -241,7 +248,7 @@ function changmodel(id, name) {
                         "<td><a href='" + ver.url + "'>" + ver.versionName + "</a> </td>" +
                         "<td>" + gettime(ver.versionDate) + "</td>" +
                         "<td id='verdescrible" + verdesid + "'></td>" +
-                        "<td><input type='button' class='btn btn-primary btn-xs' value='添加描述' data-toggle='modal' data-target='#myModal4' onclick='setDesid(" + ver.id + ")'></td>" +
+                        "<td><input type='button' class='btn btn-primary btn-xs'  value='添加描述' data-toggle='modal' data-target='#myModal4' onclick='setDesid(" + ver.id + ")'></td>" +
                         "</tr>"
                     )
                     //添加版本描述
@@ -380,6 +387,7 @@ function updatemininfo() {
     var res = $("#updateresouce").val();
     var nid = $("#updatenavid").val();
     var time = $("#savetime").val();
+
     $.ajax({
         type: "POST",
         url: serverUri + "/updateMainInfo",
@@ -387,13 +395,9 @@ function updatemininfo() {
         data: {name: name, beginTime: begin, endTime: end, nid: nid, title: title, res: res, id: id, time: time},
         dataType: "json",
     });
-    //在页面上修改当前模块信息
-    $(".header a").text(name);
-    $(".header a").attr("href", res);
-    $(".header p").remove();
-    $(".header").append(
-        "<p class='category'>研发时间：" + gettime(begin) + "至" + gettime(end) + "</p>"
-    );
+    setTimeout(function () {
+        changmodel(typeid, title);
+    }, 500);
 
 
 }
