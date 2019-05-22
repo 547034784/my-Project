@@ -114,24 +114,24 @@
     <!-- 新增导航栏主体内容 -->
     <div class="add-navigation">
         <div class="navigation">
-            <h4 style="margin-left: 10%">新增导航栏</h4><br>
-            导航栏名称:&emsp;
+            <h4 style="margin-left: 11%">新增导航栏</h4><br>
+            <span style="margin-left: 3%">导航栏名称:&emsp;</span>
             <input type="text" id="navigation" name="navigation"><br><br><br>
             <!--导航栏路径:&emsp;-->
             <!--<input type="text" id="navigationid" name="navigationid"><br><br><br>-->
-            <button type="button" class="btn btn-primary" onclick="addnavigation()">添加</button>
+            <button type="button" class="btn btn-primary" onclick="addnavigation()" style="margin-left: 10%">添加</button>
         </div>
         <div class="chenge">
             <h4 class="addnav">编辑导航栏</h4><br>
             <div class="selectNavigation">
-                <span class="word">选择导航栏:</span>&emsp;
-                <select name="selectNavigation" id="selectNavigation">
+                <span class="word" style="margin-left: -3%">选择导航栏:</span>&emsp;
+                <select name="selectNavigation" id="selectNavigation" style="width: 14.5%;height: 32px">
 
                 </select><br><br>
-                新名称:&emsp;
+                <span>新名称:&emsp;</span>
                 <input type="text" id="newnav" name="newnav"><br><br><br>
             </div>
-            <button type="button" class="btn btn-primary" onclick="changenavigation()" style="text-align: center">编辑
+            <button type="button" class="btn btn-primary" onclick="changenavigation()" style=" margin-left: 4%">编辑
             </button>
         </div>
 
@@ -247,32 +247,46 @@
     function addnavigation() {
         // alert($("#navigation").val());
         var name = $("#navigation").val();
-        $(".nav").append(
+        if (name == null || name == ""){
+            alert("请输入导航栏名称")
+        }
+        else {
+            $(".nav").append(
             "<li class='active'>" +
             "<a href='../index.html'>" +
             "<i class='pe-7s-graph'></i>" +
             "<p>" + $("#navigation").val() + "</p> </a></li>"
         );
-        $.ajax({
-            type: "POST",
-            url: serverUri + "/addNavigation",
-            data: {name: name},
-            dataType: "json",
-        });
-        window.location.href = '../index.html'
+            $.ajax({
+                type: "POST",
+                url: serverUri + "/addNavigation",
+                data: {name: name},
+                dataType: "json",
+            });
+            window.location.href = '../index.html'
+
+        }
+
     }
 
 
     function changenavigation() {
         var newname = $("#newnav").val();
         var nav = $("#selectNavigation").val();
-        $.ajax({
-            type: "POST",
-            url: serverUri + "/changeNavigation",
-            data: {newname: newname, nav: nav},
-            dataType: "json",
-        });
-        window.location.href = '../index.html'
+        if (newname == null || newname == ""){
+            alert("新名称不能为空")
+        }
+        else {
+            $.ajax({
+                type: "POST",
+                url: serverUri + "/changeNavigation",
+                data: {newname: newname, nav: nav},
+                dataType: "json",
+            });
+            window.location.href = '../index.html'
+        }
+
+
     }
 </script>
 
