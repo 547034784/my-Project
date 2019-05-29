@@ -43,7 +43,7 @@ $(document).ready(function () {
             )
         },
         error: function () {
-            alert("发生异常");
+            alert(error.message);
         }
     });
     //第一次加载版本研发页面
@@ -195,12 +195,12 @@ function changmodel(id, name) {
                     "<div class='card '>" +
                     "<div class='header'>" +
                     //资源路径，模块名称
-                    "<a href='" + info.url + "' class='col-md-3'>" + info.headName + "</a>" +
-                    "<input type='button' class='btn btn-primary btn-sm' value='编辑模块' data-toggle='modal' data-target='#myModa5' onclick='updateMain(" + info.id + ")' style='margin-left: 66%'>" +
+                    "<a href='" + info.url + "' class='col-md-3'>" + info.headName + "</a><br>" +
                     //研发时间
-                    "<p class='category'>研发时间：" + begintime + "至" + endtime + "</p>" +
-                    "<input type='button' class='btn btn-primary btn-xs' value='添加版本' data-toggle='modal' data-target='#myModal2' onclick='setid(" + info.id + ")' style='margin-left: 83.5%'>" +
-                    "<input type='button' class='btn btn-primary btn-xs' value='修改版本' data-toggle='modal' data-target='#myModal1' onclick='initchangemodal(" + info.id + ")' style='margin-left: 2%'>" +
+                    "<p class='category'>研发时间：" + begintime + "至" + endtime + "</p><br>" +
+                    "<input type='button' class='btn btn-primary btn-sm col-sm-offset-7' value='编辑模块' data-toggle='modal' data-target='#myModa5' onclick='updateMain(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-sm col-sm-offset-1' value='添加版本' data-toggle='modal' data-target='#myModal2' onclick='setid(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-sm ' value='修改版本' data-toggle='modal' data-target='#myModal1' onclick='initchangemodal(" + info.id + ")'style='margin-left: 11%'>" +
                     "</div>" +
                     "<div class='content'>" +
                     "<div class='row'>" +
@@ -245,10 +245,10 @@ function changmodel(id, name) {
                     verdesid = ver.id;
                     $("#" + info.id + "td").append(
                         "<tr>" +
-                        "<td><a href='" + ver.url + "'>" + ver.versionName + "</a> </td>" +
-                        "<td>" + gettime(ver.versionDate) + "</td>" +
-                        "<td id='verdescrible" + verdesid + "'></td>" +
-                        "<td><input type='button' class='btn btn-primary btn-xs'  value='添加描述' data-toggle='modal' data-target='#myModal4' onclick='setDesid(" + ver.id + ")'></td>" +
+                        "<td style='width: 195px'><a href='" + ver.url + "'>" + ver.versionName + "</a> </td>" +
+                        "<td style='width: 134px'>" + gettime(ver.versionDate) + "</td>" +
+                        "<td id='verdescrible" + verdesid + "' style='width: 252px'></td>" +
+                        "<td><input type='button' class='btn btn-primary btn-xs'  value='添加描述' data-toggle='modal' data-target='#myModal4' onclick='setDesid(" + ver.id + ")' style='text-align: center'></td>" +
                         "</tr>"
                     )
                     //添加版本描述

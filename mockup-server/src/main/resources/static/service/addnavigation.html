@@ -96,7 +96,6 @@
                     </a>
                 </li>
             </ul>
-
         </div>
     </div>
 
@@ -114,25 +113,27 @@
     <!-- 新增导航栏主体内容 -->
     <div class="add-navigation">
         <div class="navigation">
-            <h4 style="margin-left: 11%">新增导航栏</h4><br>
-            <span style="margin-left: 3%">导航栏名称:&emsp;</span>
+            <h4 class="col-sm-offset-2">新增导航栏</h4><br>
+            <span class="col-sm-offset-1">导航栏名称:&emsp;</span>
             <input type="text" id="navigation" name="navigation"><br><br><br>
             <!--导航栏路径:&emsp;-->
             <!--<input type="text" id="navigationid" name="navigationid"><br><br><br>-->
-            <button type="button" class="btn btn-primary" onclick="addnavigation()" style="margin-left: 10%">添加</button>
+            <div class="col-lg-offset-1"><button type="button" class="btn btn-primary" onclick="addnavigation()">添加</button></div>
         </div>
         <div class="chenge">
-            <h4 class="addnav">编辑导航栏</h4><br>
+            <div class="col-sm-offset-1"><h4 style="margin-left: 3%">编辑导航栏</h4><br></div>
             <div class="selectNavigation">
-                <span class="word" style="margin-left: -3%">选择导航栏:</span>&emsp;
+                <div style="margin-left: 1%"><span >选择导航栏:</span>&emsp;
                 <select name="selectNavigation" id="selectNavigation" style="width: 14.5%;height: 32px">
 
                 </select><br><br>
-                <span>新名称:&emsp;</span>
+                </div>
+                <div style="margin-left: 4%"><span>新名称:&emsp;</span>
                 <input type="text" id="newnav" name="newnav"><br><br><br>
+                </div>
             </div>
-            <button type="button" class="btn btn-primary" onclick="changenavigation()" style=" margin-left: 4%">编辑
-            </button>
+            <div class="col-lg-offset-1"><button type="button" class="btn btn-primary" onclick="changenavigation()">编辑
+            </button></div>
         </div>
 
     </div>
