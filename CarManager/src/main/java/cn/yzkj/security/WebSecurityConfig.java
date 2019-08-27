@@ -41,4 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .csrf().disable();
     }
+    public  void config(){
+        System.out.println("你好");
+    }
 }
