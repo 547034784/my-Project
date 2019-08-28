@@ -1,1 +1,1 @@
-var serverUri = "http://localhost:80";
+var serverUri = "";
