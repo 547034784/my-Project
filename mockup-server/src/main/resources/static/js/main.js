@@ -260,7 +260,7 @@ function changmodel(id, name) {
                     "</div>" +
                     "</div>" +
                     "<input type='button' class='btn btn-primary btn-xs col-md-offset-0' value='模块信息' data-toggle='modal' data-target='#myModal3' onclick='setid(" + info.id + ")'>" +
-                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-1' value='信息编辑' data-toggle='modal' data-target='#myModal6' onclick='changeMessage(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-1' value='信息编辑' data-toggle='modal' data-target='#myModal6' onclick='initChangeMessage(" + info.id + ")'>" +
                     "</div>" +
                     "</div>" +
                     "</div>" +
@@ -465,9 +465,9 @@ function setid(id) {
 }
 
 //初始化修改信息模态框
-function changeMessage(id) {
-    $("#updateMessgaename").val(" ");
-    $("#updatemessage").val(" ");
+function initChangeMessage(id) {
+    $("#updatemessage").html(" ");
+    $("#updatemessageName").val(" ");
     $("#changeid0").val(id);
     $.ajax({
         type: "get",
