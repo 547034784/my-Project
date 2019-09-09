@@ -33,4 +33,9 @@ public class VersionServiceimpl implements IVersionService {
     public VersionEntity getVersionById(int id) {
         return versionRepository.findOne(id);
     }
+
+    @Override
+    public void deleteVerson(int id) {
+         versionRepository.delete( id );
+    }
 }

@@ -15,7 +15,7 @@ import java.util.List;
 
 
 /**
- *  版本管理,包括添加，修改，查询
+ *  版本管理,包括添加，修改，查询,删除
  * @author  杨浩
  */
 @RestController
@@ -131,6 +131,16 @@ public class VersionController {
         versionDesService.addVersioDes(versionDesEntity);
     }
 
+    /**
+     *
+     *   删除版本
+     */
+    @RequestMapping("/deleteVer")
+    @ResponseBody
+    public  void  deleteVersion(HttpServletRequest request){
+        int id = Integer.parseInt(request.getParameter("id").trim());
+        versionService.deleteVerson( id );
+    }
 
 
 }
