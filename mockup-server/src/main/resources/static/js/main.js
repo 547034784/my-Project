@@ -281,7 +281,7 @@ function changmodel(id, name) {
                         "<td style='width: 134px'>" + gettime(ver.versionDate) + "</td>" +
                         "<td id='verdescrible" + verdesid + "' style='width: 252px'></td>" +
                         "<td><input type='button' class='btn btn-primary btn-xs'  value='添加描述' data-toggle='modal' data-target='#myModal4' onclick='setDesid(" + ver.id + ")' style='text-align: center'></td>" +
-                        "<td><input type='button' class='btn btn-primary btn-xs'  value='版本删除' onclick='deleteVer(" + ver.id + ")' style='text-align: center'></td>" +
+                        "<td><input type='button' class='btn btn-primary btn-xs'  value='版本删除' data-toggle='modal' data-target='#myModal7' onclick='deleteVer(" + ver.id + ")' style='text-align: center'></td>" +
                         "</tr>"
                     );
                     //添加版本描述
@@ -419,6 +419,7 @@ function updatemininfo() {
         data: {name: name, beginTime: begin, endTime: end, nid: nid, title: title, res: res, id: id, time: time},
         dataType: "json"
     });
+    $("#myModal5").modal('hide');
     setTimeout(function () {
         changmodel(typeid, title);
     }, 500);
@@ -465,8 +466,8 @@ function setid(id) {
 
 //初始化修改信息模态框
 function changeMessage(id) {
-    $("#updatemessage").html(" ");
     $("#updateMessgaename").val(" ");
+    $("#updatemessage").val(" ");
     $("#changeid0").val(id);
     $.ajax({
         type: "get",
