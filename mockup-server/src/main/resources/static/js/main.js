@@ -466,8 +466,8 @@ function setid(id) {
 
 //初始化修改信息模态框
 function initChangeMessage(id) {
-    $("#updatemessage").html(" ");
     $("#updatemessageName").val(" ");
+    $("#updatemessage").html(" ");
     $("#changeid0").val(id);
     $.ajax({
         type: "get",
