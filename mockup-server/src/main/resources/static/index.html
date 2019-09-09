@@ -189,6 +189,7 @@
                                     <input type="text" class="form-control" id="newmessage" style="height: 35px"><br>
                                 </div>
                             </div>
+
                         </form>
                         <!--<input type="hidden" id="infoid" name="infoid" value="">-->
                         <!--<span>信息内容</span>:&emsp;<input type="text" id="newmessage" name="newmessage"><br><br>-->
@@ -196,6 +197,56 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                         <button type="button" class="btn btn-primary" onclick="addnewmessage()">提交</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 修改信息模态框-->
+        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabe4" style="text-align: center">修改模块信息</h4>
+                    </div>
+                    <div class="modal-body" style="text-align: center;height: 100px">
+                        <!--<form>-->
+                        <input type="hidden" id="changeid0" name="changeid0" value="">
+                        <div class="form-group">
+                            <label for="updatemessage" class="col-sm-2 control-label" style="margin-top: 10px">选择信息:</label>
+                            <div class="col-sm-10">
+                                <select name="updatemessage" id="updatemessage" style="width: 100%;height: 30px" onchange="findModelMessage()" >
+
+                                </select><br><br>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateMessagename" class="col-sm-2 control-label" style="margin-top: 10px">信息名称:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="updateMessagename" style="height: 35px"><br>
+                            </div>
+                        </div>
+                        <!--</form>-->
+                        <!--<input type="hidden" id="changeid" name="changeid" value="">-->
+                        <!--<span>选择版本:<span>&emsp;-->
+                        <!--<select name="updateversion" id="updateversion" style="width: 28%" onchange="findversion()">-->
+
+                        <!--</select><br><br>-->
+                        <!--<span>版本名称</span>:&emsp;<input type="text" id="updatename" name="updatename"><br><br>-->
+                        <!--<span>上线时间</span>:&emsp;<input type="date" id="updateontime" name="updateontime"><br><br>-->
+                        <!--<span>资源路径</span>:&emsp;<input type="text" id="updaturl" name="updaturl"><br><br>-->
+                        <!--<span>选择描述:<span>&emsp;-->
+                        <!--<select name="descriptionid" id="descriptionid" style="width: 28%" onchange="findversiondes()">-->
+
+                        <!--</select><br><br>-->
+                        <!--<span>模块描述</span>:&emsp;<input type="text" id="updatedes" name="updatedes"><br><br>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" onclick="updateModelMessage()">提交</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal -->
@@ -285,7 +336,7 @@
         </div>
 
         <!-- 修改模块模态框 -->
-        <div class="modal fade" id="myModa5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
              aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -316,12 +367,7 @@
                                     <input type="date" class="form-control" id="updateendtime" style="height: 35px"><br>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="updateresouce" class="col-sm-2 control-label" style="margin-top: 10px">资源路径:</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="updateresouce" style="height: 35px"><br>
-                                </div>
-                            </div>
+
                         <!--</form>-->
                         <!--<span>模块名称</span>:&emsp;<input type="text" id="updateresearchname"-->
                                                        <!--name="updateresearchname"><br><br>-->
@@ -336,6 +382,7 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal -->
         </div>
+
         <!-- 修改版本模态框 -->
         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
              aria-hidden="true">

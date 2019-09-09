@@ -17,7 +17,6 @@ public class MainInfoEntityServiceImpl implements IMainInfoService {
            main.save(mainInfoEntity);
 
     }
-
     @Override
     public List<MainInfoEntity> getMainInfoByNavId(int id) {
         return main.findByNavigationIdOrderBySaveTimeDesc(id);

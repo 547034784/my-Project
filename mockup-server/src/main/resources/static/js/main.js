@@ -31,7 +31,7 @@ $(document).ready(function () {
                     "<i class='pe-7s-graph'></i>" +
                     "<p>" + mesage.navigationName + "</p> </a></li>"
                 );
-            })
+            });
             //导航栏管理导航栏
             $(".nav").append(
                 " <li class='active'>" +
@@ -147,7 +147,7 @@ function addmodel() {
     $("#ontime").val(" ")
     $("#versiondes").val(" ")
     $("#versionurl").val(" ")
-    //重新渲染页面
+    //setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式
     setTimeout(function () {
         changmodel(typeid, title);
     }, 500);
@@ -172,6 +172,34 @@ function addnewmessage() {
     });
 }
 
+//修改模块信息方法
+function updateModelMessage(){
+    var mainId = $("#changeid0").val();
+    var MessageId=$("#updatemessage").val();
+    var  MessageName = $("#updateMessagename").val();
+    if ( MessageName == "请选择"){
+        alert("请选择版本")
+    }
+    else {
+        $.ajax({
+            type: "POST",
+            url: serverUri + "/updateModelMessage",
+            data: {
+                mainId: mainId,
+                MessageId:MessageId,
+                MessageName:MessageName
+            },
+            dataType: "json"
+        });
+        $("#myModal6").modal('hide');
+        //刷新当前页面
+        setTimeout(function () {
+            changmodel(typeid, title);
+        }, 500);
+
+    }
+}
+
 //根据导航栏的点击选择，生成不同的页面
 function changmodel(id, name) {
     $("#maininfo").html("");
@@ -188,6 +216,8 @@ function changmodel(id, name) {
                 //时间转换
                 var begintime = gettime(info.begingTime);
                 var endtime = gettime(info.endTimes);
+                //模块信息
+                var mainNames=info.mainName;
                 $("#headname").html(info.titleName + "原型")
                 $("#maininfo").append(
                     "<div class='row'>" +
@@ -198,7 +228,7 @@ function changmodel(id, name) {
                     "<a href='" + info.url + "' class='col-md-3'>" + info.headName + "</a><br>" +
                     //研发时间
                     "<p class='category'>研发时间：" + begintime + "至" + endtime + "</p><br>" +
-                    "<input type='button' class='btn btn-primary btn-sm col-sm-offset-7' value='编辑模块' data-toggle='modal' data-target='#myModa5' onclick='updateMain(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-sm col-sm-offset-5' value='编辑模块' data-toggle='modal' data-target='#myModal5' onclick='updateMain(" + info.id + ")'>" +
                     "<input type='button' class='btn btn-primary btn-sm col-sm-offset-1' value='添加版本' data-toggle='modal' data-target='#myModal2' onclick='setid(" + info.id + ")'>" +
                     "<input type='button' class='btn btn-primary btn-sm ' value='修改版本' data-toggle='modal' data-target='#myModal1' onclick='initchangemodal(" + info.id + ")'style='margin-left: 11%'>" +
                     "</div>" +
@@ -219,6 +249,7 @@ function changmodel(id, name) {
                     "<th style='text-align: center'>上线时间</th>" +
                     "<th style='text-align: center'>版本描述</th>" +
                     "<th style='text-align: center'>添加描述</th>" +
+                    "<th style='text-align: center'>版本删除</th>" +
                     "</tr>" +
                     "</thead>" +
                     //生成动态id，根据id将版本信息渲染到页面
@@ -228,7 +259,8 @@ function changmodel(id, name) {
                     "</div>" +
                     "</div>" +
                     "</div>" +
-                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-1' value='模块信息' data-toggle='modal' data-target='#myModal3' onclick='setid(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-0' value='模块信息' data-toggle='modal' data-target='#myModal3' onclick='setid(" + info.id + ")'>" +
+                    "<input type='button' class='btn btn-primary btn-xs col-md-offset-1' value='信息编辑' data-toggle='modal' data-target='#myModal6' onclick='changeMessage(" + info.id + ")'>" +
                     "</div>" +
                     "</div>" +
                     "</div>" +
@@ -239,8 +271,8 @@ function changmodel(id, name) {
                     $("#" + info.id).append(
                         "<li> " + des.name + " </li> "
                     );
-                })
-                //在模块中添加版本信息
+                });
+                //在模块中添加版本信息和删除版本
                 $.each(info.versionEntityList, function (i, ver) {
                     verdesid = ver.id;
                     $("#" + info.id + "td").append(
@@ -249,21 +281,23 @@ function changmodel(id, name) {
                         "<td style='width: 134px'>" + gettime(ver.versionDate) + "</td>" +
                         "<td id='verdescrible" + verdesid + "' style='width: 252px'></td>" +
                         "<td><input type='button' class='btn btn-primary btn-xs'  value='添加描述' data-toggle='modal' data-target='#myModal4' onclick='setDesid(" + ver.id + ")' style='text-align: center'></td>" +
+                        "<td><input type='button' class='btn btn-primary btn-xs'  value='版本删除' onclick='deleteVer(" + ver.id + ")' style='text-align: center'></td>" +
                         "</tr>"
-                    )
+                    );
                     //添加版本描述
                     $.each(ver.versionDescribe, function (i, describtion) {
                         $("#verdescrible" + verdesid).append(
                             "<span>" + describtion.verdes + "</span><br>"
                         )
                     })
+
+
                 })
 
             })
         }
     });
 }
-
 //添加版本描述，verid是当前选择版本id
 function adddes() {
     $("#myModal4").modal('hide');
@@ -280,7 +314,6 @@ function adddes() {
     $("#verdescrible" + verid).append(
         "<span>" + newMessage + "</span><br>"
     )
-
 }
 
 //初始化修改版本模态框的值，id为选中的模块
@@ -304,19 +337,16 @@ function initchangemodal(id) {
             );
 
             //给选择版本下拉框赋值
-            $.each(data, function (index, version) {
+            $.each(data, function (index, message) {
                 $("#updateversion").append(
-                    "<option value= " + version.id + ">" + version.versionName + "</option>"
+                    "<option value= " + message.id + ">" + message.versionName + "</option>"
                 )
-
             })
-
         },
         error: function () {
             alert("发生异常");
         }
     });
-
 }
 
 //根据修改版本模态框中选中的版本名称初始化选择描述下拉框值
@@ -338,7 +368,7 @@ function findversion() {
                 $("#descriptionid").append(
                     "<option value= " + desc.id + ">" + desc.verdes + "</option>"
                 )
-            })
+            });
             //初始化模块描述输入框的值
             $("#updatedes").val($("#descriptionid option:selected").text());
         },
@@ -346,12 +376,6 @@ function findversion() {
             alert("发生异常");
         }
     });
-
-}
-
-//给修改版本模态框中的模块描述输入框赋值
-function findversiondes() {
-    $("#updatedes").val($("#descriptionid option:selected").text());
 }
 
 //根据模块id初始化修改模块模态框的值
@@ -393,12 +417,11 @@ function updatemininfo() {
         url: serverUri + "/updateMainInfo",
         //id为当前模块id，nid为当前模块所属的导航栏id，time为从数据库获取的存入数据库的时间，发送给服务器一并保存
         data: {name: name, beginTime: begin, endTime: end, nid: nid, title: title, res: res, id: id, time: time},
-        dataType: "json",
+        dataType: "json"
     });
     setTimeout(function () {
         changmodel(typeid, title);
     }, 500);
-
 
 }
 
@@ -440,9 +463,78 @@ function setid(id) {
     $("#mainid").val(id);
 }
 
+//初始化修改信息模态框
+function changeMessage(id) {
+    $("#updatemessage").html(" ");
+    $("#updateMessgaename").val(" ");
+    $("#changeid0").val(id);
+    $.ajax({
+        type: "get",
+        url: serverUri + "/findBymainInfoEntityId",
+        data: {id: id},
+        dataType: "json",
+        success: function (data) {
+            $("#updatemessage").append(
+                " <option>请选择</option>"
+            );
+
+            //给选择版本下拉框赋值
+            $.each(data, function (index, Message) {
+                $("#updatemessage").append(
+                    "<option value= " + Message.id + ">" + Message.name + "</option>"
+                )
+            })
+        },
+        error: function () {
+            alert("发生异常");
+        }
+    });
+}
+
+//根据修改信息模态框中选中的模板名称初始化选择描述下拉框值
+function findModelMessage() {
+    $("#updateMessgaename").val($("#updatemessage option:selected").text());
+    var id = $("#updatemessage option:selected").val();
+    $.ajax({
+        type: "get",
+        url: serverUri + "/getModelMessageById",
+        data: {id: id},
+        dataType: "json",
+        success: function (data) {
+            var Message=data;
+                $("#updateMessagename").val(data.name);
+        },
+        error: function () {
+            alert("发生异常");
+        }
+    });
+}
+
+//给修改版本模态框中的模块描述输入框赋值
+function findversiondes() {
+    $("#updatedes").val($("#descriptionid option:selected").text());
+}
+
 //给模态框hidden属性的输入框赋值，id为当前模块id，verdesid为当前版本id
 function setDesid(verdesid) {
     $("#setVersionId").val(verdesid);
+}
+
+//删除当前模态框的版本信息  id为当前模块id，verdesid为当前版本id
+function deleteVer(verdesid) {
+    $.ajax({
+        type: "get",
+        url: serverUri + "/deleteVer",
+        data: {id: verdesid},
+        success: function () {
+            setTimeout(function () {
+                changmodel(typeid, title);
+            }, 500);
+        },
+        error: function () {
+            alert("发生异常");
+        }
+    })
 }
 
 (function (i, s, o, g, r, a, m) {

@@ -10,6 +10,4 @@ public interface MainInfoRepository extends JpaRepository<MainInfoEntity,Integer
 
    public List<MainInfoEntity> findByNavigationIdOrderBySaveTimeDesc(int id);
 
-
-
 }

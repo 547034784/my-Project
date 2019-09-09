@@ -36,4 +36,11 @@ public interface IVersionService {
      * @return 版本对象
      */
     public VersionEntity getVersionById(int id);
+
+    /**
+     *   根据版本id 删除版本信息
+     *   @param id  版本id
+     *   @return 版本对象
+     */
+    public void deleteVerson(int id);
 }

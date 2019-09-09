@@ -12,4 +12,6 @@ public interface VersionRepository extends JpaRepository<VersionEntity,Integer> 
 
     public List<VersionEntity>  findBymainInfoEntityId(int id);
 
+    public void delete(int id);
+
 }
