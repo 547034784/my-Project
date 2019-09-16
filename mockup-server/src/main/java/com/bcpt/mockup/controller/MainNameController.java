@@ -4,7 +4,6 @@ package com.bcpt.mockup.controller;
 import com.bcpt.mockup.entity.MainInfoEntity;
 import com.bcpt.mockup.entity.MainNameEntity;
 import com.bcpt.mockup.service.IMainNameService;
-import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,15 +30,7 @@ public class MainNameController {
     public  void  addNewMessage(HttpServletRequest request){
         int id = Integer.parseInt(request.getParameter("id").trim());
         String newMessages = request.getParameter( "messages" );
-        JSONArray array = JSONArray.fromObject( newMessages );
-        for(int i = 0 ; i < array.length() ; i++) {
-            MainNameEntity main = new MainNameEntity();
-            MainInfoEntity mainInfo = new MainInfoEntity();
-            main.setName( (String) array.get( i ) );
-            mainInfo.setId(id);
-            main.setMainInfoEntity(mainInfo);
-            mainNameService.addMainName(main);
-        }
+        mainNameService.addMainName(id,newMessages);
     }
 
     /**
@@ -80,7 +71,7 @@ public class MainNameController {
         mainNameEntity.setId( MessageId );
         mainNameEntity.setName( MessageName );
         mainNameEntity.setMainInfoEntity( mainInfoEntity );
-        mainNameService.addMainName( mainNameEntity );
+        mainNameService.updateMainName( mainNameEntity);
     }
 
     /**

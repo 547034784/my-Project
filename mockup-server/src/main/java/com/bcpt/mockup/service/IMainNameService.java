@@ -14,7 +14,7 @@ public interface IMainNameService {
      *   添加模块描述
      * @param mainNameEntity  模块描述对象
      */
-    public void addMainName(MainNameEntity mainNameEntity);
+    public void addMainName(int id, String messages);
 
     /**
      *   修改模块描述
@@ -35,4 +35,11 @@ public interface IMainNameService {
      *
      */
     public void deleteModelMessage(int messageid);
+
+    /**
+     *   模块修改
+     * @param mainNameEntity  模块描述对象
+     */
+    public void updateMainName( MainNameEntity mainNameEntity);
+
 }

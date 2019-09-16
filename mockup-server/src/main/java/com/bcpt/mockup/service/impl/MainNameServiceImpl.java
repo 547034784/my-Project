@@ -1,8 +1,10 @@
 package com.bcpt.mockup.service.impl;
 
 import com.bcpt.mockup.dao.MainINameRepository;
+import com.bcpt.mockup.entity.MainInfoEntity;
 import com.bcpt.mockup.entity.MainNameEntity;
 import com.bcpt.mockup.service.IMainNameService;
+import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,8 +17,17 @@ public class MainNameServiceImpl implements IMainNameService {
     private MainINameRepository mainINameRepository;
 
     @Override
-    public void addMainName(MainNameEntity mainNameEntity) {
-        mainINameRepository.save(mainNameEntity);
+    public void addMainName(int id, String newMessages) {
+        JSONArray mess = JSONArray.fromObject( newMessages );
+        for(int i = 0 ; i < mess.length() ; i++) {
+            MainNameEntity main = new MainNameEntity();
+            MainInfoEntity mainInfo = new MainInfoEntity();
+            main.setName( (String) mess.get( i ) );
+            mainInfo.setId(id);
+            main.setMainInfoEntity(mainInfo);
+            mainINameRepository.save(main);
+        }
+
     }
 
     @Override
@@ -32,6 +43,11 @@ public class MainNameServiceImpl implements IMainNameService {
     @Override
     public void deleteModelMessage(int MessageId) {
          mainINameRepository.delete( MessageId );
+    }
+
+    @Override
+    public void updateMainName(MainNameEntity mainNameEntity) {
+        mainINameRepository.save( mainNameEntity );
     }
 
 
