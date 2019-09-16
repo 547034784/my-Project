@@ -29,4 +29,10 @@ public interface IMainNameService {
      */
     public MainNameEntity getMainNameEntityById(Integer MessageId);
 
+    /**
+     *   删除模板信息
+     * @param MessageId 模块信息id
+     *
+     */
+    public void deleteModelMessage(int messageid);
 }

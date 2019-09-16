@@ -8,6 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * 模块对象
+ */
 @Entity
 @Table(name = "t_info")
 public class MainInfoEntity implements Serializable {
@@ -54,7 +57,7 @@ public class MainInfoEntity implements Serializable {
 
    }
 
-    public MainInfoEntity(String headName, String titleName, Date begingTime, Date endTimes, long saveTime, NavigationEntity navigation, List<MainNameEntity> mainName, List<VersionEntity> versionEntityList,String url) {
+    public MainInfoEntity(String headName, String titleName, Date begingTime, Date endTimes, long saveTime, NavigationEntity navigation, List<MainNameEntity> mainName, List<VersionEntity> versionEntityList, String url) {
         this.headName = headName;
         this.titleName = titleName;
         this.begingTime = begingTime;

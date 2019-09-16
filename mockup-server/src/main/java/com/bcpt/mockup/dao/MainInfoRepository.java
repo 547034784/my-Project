@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface MainInfoRepository extends JpaRepository<MainInfoEntity,Integer> {
 
-   public List<MainInfoEntity> findByNavigationIdOrderBySaveTimeDesc(int id);
+
+  public List<MainInfoEntity> findByNavigationIdOrderBySaveTimeDesc(int id);
 
 }

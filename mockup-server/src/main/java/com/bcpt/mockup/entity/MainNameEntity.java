@@ -7,6 +7,9 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * 模块信息对象
+ */
 @Entity
 @Table(name = "t_mainnames")
 public class MainNameEntity implements Serializable {

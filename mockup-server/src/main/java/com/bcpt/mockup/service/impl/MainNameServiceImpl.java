@@ -6,7 +6,6 @@ import com.bcpt.mockup.service.IMainNameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -28,6 +27,11 @@ public class MainNameServiceImpl implements IMainNameService {
     @Override
     public MainNameEntity getMainNameEntityById(Integer MessageId) {
         return mainINameRepository.getMainNameEntityById( MessageId );
+    }
+
+    @Override
+    public void deleteModelMessage(int MessageId) {
+         mainINameRepository.delete( MessageId );
     }
 
 

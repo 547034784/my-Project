@@ -173,15 +173,15 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabe3" style="text-align: center">模块信息</h4>
+                        <h4 class="modal-title" id="myModalLabe3" style="text-align: center">模块信息增加</h4>
                     </div>
-                    <div class="modal-body" style="text-align: center;height: 80px">
+                    <div class="modal-body" style="text-align: center">
                         <form>
                             <input type="hidden" id="infoid" name="infoid" value="">
-                            <div class="form-group">
+                            <div class="form-group" style="width: 454px;height: 242px;">
                                 <label for="newmessage" class="col-sm-2 control-label" style="margin-top: 10px">信息内容:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="newmessage" style="height: 35px"><br>
+                                    <textarea class="form-control" id="newmessage" cols="50" rows="1" wrap="hard" style="margin: 0px 5.325px 0px 0px;width: 454px;height: 257px;"></textarea>
                                 </div>
                             </div>
 
@@ -204,7 +204,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabe4" style="text-align: center">修改模块信息</h4>
+                        <h4 class="modal-title" id="myModalLabe4" style="text-align: center">修改信息</h4>
                     </div>
                     <div class="modal-body" style="text-align: center;height: 100px">
                         <!--<form>-->
@@ -212,7 +212,7 @@
                         <div class="form-group">
                             <label for="updatemessage" class="col-sm-2 control-label" style="margin-top: 10px">选择信息:</label>
                             <div class="col-sm-10">
-                                <select name="updatemessage" id="updatemessage" style="width: 100%;height: 30px" onchange="findModelMessage()" >
+                                <select name="updatemessage" id="updatemessage" style="width: 100%;height: 30px" onchange="findChangeModelMessage()" >
 
                                 </select><br><br>
                             </div>
@@ -227,6 +227,41 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                         <button type="button" class="btn btn-primary" onclick="updateModelMessage()">提交</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
+
+        <!-- 修改删除模态框-->
+        <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabe5" style="text-align: center">删除信息</h4>
+                    </div>
+                    <div class="modal-body" style="text-align: center;height: 100px">
+                        <!--<form>-->
+                        <input type="hidden" id="deleteid" name="deleteid" value="">
+                        <div class="form-group">
+                            <label for="deleteMessage" class="col-sm-2 control-label" style="margin-top: 10px">选择信息:</label>
+                            <div class="col-sm-10">
+                                <select name="deleteMessage" id="deleteMessage" style="width: 100%;height: 30px" onchange="findDeleteModelMessage()" >
+                                </select><br><br>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="deleteMessageName" class="col-sm-2 control-label" style="margin-top: 10px">信息名称:</label>
+                            <div class="col-sm-10">
+                                <input  type="hidden"  id="deleteid1" name="deleteid1" value="" ><br>
+                                <input type="text" class="form-control" id="deleteMessageName" style="height: 35px" disabled="disabled"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" onclick="deleteModelMessage()">删除</button>
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal -->
@@ -296,10 +331,10 @@
                         <!--<form>-->
                             <input type="hidden" id="newDesid" name="newDesid" value="">
                             <input type="hidden" id="setVersionId" name="setVersionId" value="">
-                            <div class="form-group">
+                            <div class="form-group" style="width: 454px;height: 242px;">
                                 <label for="newvermessage" class="col-sm-2 control-label" style="margin-top: 10px">描述内容:</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="newvermessage" style="height: 35px"><br>
+                                    <textarea class="form-control" id="newvermessage" cols="50" rows="1" wrap="hard" style="margin: 0px 5.325px 0px 0px;width: 454px;height: 278px;"></textarea>
                                 </div>
                             </div><br>
                         <!--</form>-->
@@ -352,7 +387,6 @@
                                                        <!--name="updateresearchname"><br><br>-->
                         <!--<span>开始时间</span>:&emsp;<input type="date" id="updatebegintime" name="updatebegintime"><br><br>-->
                         <!--<span>结束时间</span>:&emsp;<input type="date" id="updateendtime" name="updateendtime"><br><br>-->
-                        <!--<span>资源路径</span>:&emsp;<input type="text" id="updateresouce" name="updateresouce"><br>-->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>

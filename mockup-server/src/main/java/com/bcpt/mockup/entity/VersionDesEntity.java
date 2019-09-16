@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * 模块版本描述对象
+ */
 @Entity
 @Table(name = "t_varsiondes")
 public class VersionDesEntity implements Serializable {

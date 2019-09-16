@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface VersionRepository extends JpaRepository<VersionEntity,Integer> {
 
-    public VersionEntity getByVersionNameAndMainInfoEntityId(String name,int mainId);
+    public VersionEntity getByVersionNameAndMainInfoEntityId(String name, int mainId);
 
     public List<VersionEntity>  findBymainInfoEntityId(int id);
 

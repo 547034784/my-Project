@@ -20,7 +20,7 @@ public class VersionServiceimpl implements IVersionService {
     }
 
     @Override
-    public VersionEntity getVersionByNameAndMainId(String name,int mainId) {
+    public VersionEntity getVersionByNameAndMainId(String name, int mainId) {
         return versionRepository.getByVersionNameAndMainInfoEntityId(name,mainId);
     }
 

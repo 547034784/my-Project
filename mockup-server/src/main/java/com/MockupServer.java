@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MockupServer {
 
     public static void main(String[] args) {
-        SpringApplication.run(MockupServer.class, args);
+        SpringApplication.run( MockupServer.class, args);
     }
 
 }

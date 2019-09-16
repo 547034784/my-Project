@@ -4,7 +4,9 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-
+/**
+ * 导航栏对象
+ */
 @Entity
 @Table(name = "t_navigation")
 public class NavigationEntity implements Serializable {
@@ -24,9 +26,7 @@ public class NavigationEntity implements Serializable {
         this.mainInfoEntity = mainInfoEntity;
     }
 
-    public NavigationEntity(){
-
-    }
+    public NavigationEntity(){ }
 
     public Integer getId() {
         return id;

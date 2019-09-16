@@ -8,7 +8,9 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-
+/**
+ * 模块版本对象
+ */
 @Entity
 @Table(name = "t_version")
 public class VersionEntity implements Serializable {

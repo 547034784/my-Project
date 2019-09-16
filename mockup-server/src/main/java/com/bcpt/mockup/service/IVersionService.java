@@ -1,6 +1,7 @@
 package com.bcpt.mockup.service;
 
 import com.bcpt.mockup.entity.VersionEntity;
+
 import java.util.List;
 
 /**
@@ -21,7 +22,7 @@ public interface IVersionService {
      * @param mainId  模块id
      * @return  版本对象
      */
-    public VersionEntity getVersionByNameAndMainId(String name,int mainId);
+    public VersionEntity getVersionByNameAndMainId(String name, int mainId);
 
     /**
      * 根据模块id 获取所对应的版本信息

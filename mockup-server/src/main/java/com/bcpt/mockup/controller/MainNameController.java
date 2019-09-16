@@ -4,9 +4,12 @@ package com.bcpt.mockup.controller;
 import com.bcpt.mockup.entity.MainInfoEntity;
 import com.bcpt.mockup.entity.MainNameEntity;
 import com.bcpt.mockup.service.IMainNameService;
+import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -27,12 +30,16 @@ public class MainNameController {
     @ResponseBody
     public  void  addNewMessage(HttpServletRequest request){
         int id = Integer.parseInt(request.getParameter("id").trim());
-        MainNameEntity main = new MainNameEntity();
-        main.setName(request.getParameter("newmessage"));
-        MainInfoEntity mainInfo = new MainInfoEntity();
-        mainInfo.setId(id);
-        main.setMainInfoEntity(mainInfo);
-        mainNameService.addMainName(main);
+        String newMessages = request.getParameter( "messages" );
+        JSONArray array = JSONArray.fromObject( newMessages );
+        for(int i = 0 ; i < array.length() ; i++) {
+            MainNameEntity main = new MainNameEntity();
+            MainInfoEntity mainInfo = new MainInfoEntity();
+            main.setName( (String) array.get( i ) );
+            mainInfo.setId(id);
+            main.setMainInfoEntity(mainInfo);
+            mainNameService.addMainName(main);
+        }
     }
 
     /**
@@ -74,5 +81,16 @@ public class MainNameController {
         mainNameEntity.setName( MessageName );
         mainNameEntity.setMainInfoEntity( mainInfoEntity );
         mainNameService.addMainName( mainNameEntity );
+    }
+
+    /**
+     *
+     * 删除模块信息
+     */
+    @RequestMapping("/deleteModelMessage")
+    @ResponseBody
+    public void  deleteModelMessage(HttpServletRequest request){
+        int messageid = Integer.parseInt(request.getParameter("messageid"));
+        mainNameService.deleteModelMessage(messageid);
     }
 }

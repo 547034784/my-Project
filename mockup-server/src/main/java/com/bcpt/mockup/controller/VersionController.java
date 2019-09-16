@@ -6,8 +6,12 @@ import com.bcpt.mockup.entity.VersionDesEntity;
 import com.bcpt.mockup.entity.VersionEntity;
 import com.bcpt.mockup.service.IVersionDesService;
 import com.bcpt.mockup.service.IVersionService;
+import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.Date;
@@ -123,12 +127,17 @@ public class VersionController {
     @ResponseBody
     public void addNewVsersionDes(HttpServletRequest request){
         int mId = Integer.parseInt(request.getParameter("verid").trim());
-        VersionEntity versionEntity = new VersionEntity();
-        versionEntity.setId(mId);
-        VersionDesEntity versionDesEntity = new VersionDesEntity();
-        versionDesEntity.setVerdes(request.getParameter("newMessage"));
-        versionDesEntity.setVersionEntity(versionEntity);
-        versionDesService.addVersioDes(versionDesEntity);
+        String newMessage = request.getParameter( "newMessage" );
+        JSONArray newMessages = JSONArray.fromObject( newMessage );
+        for(int i=0;i<newMessages.length();i++){
+            VersionEntity versionEntity = new VersionEntity();
+            versionEntity.setId(mId);
+            VersionDesEntity versionDesEntity = new VersionDesEntity();
+            versionDesEntity.setVerdes( (String) newMessages.get(i) );
+            versionDesEntity.setVersionEntity(versionEntity);
+            versionDesService.addVersioDes(versionDesEntity);
+        }
+
     }
 
     /**
