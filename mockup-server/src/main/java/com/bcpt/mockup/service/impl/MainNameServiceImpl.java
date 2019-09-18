@@ -7,6 +7,7 @@ import com.bcpt.mockup.service.IMainNameService;
 import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -41,11 +42,13 @@ public class MainNameServiceImpl implements IMainNameService {
     }
 
     @Override
+    @Transactional
     public void deleteModelMessage(int MessageId) {
-         mainINameRepository.delete( MessageId );
+         mainINameRepository.deleteMainNameEntityById( MessageId );
     }
 
     @Override
+    @Transactional
     public void updateMainName(MainNameEntity mainNameEntity) {
         mainINameRepository.save( mainNameEntity );
     }

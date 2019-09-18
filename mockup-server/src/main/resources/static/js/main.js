@@ -252,12 +252,11 @@ function changmodel(id, name) {
                     "</div>" +
                     "<div class='content'>" +
                     "<div class='row'>" +
-                    "<div class='col-md-3'>" +
+                    " <div class='col-md-3'>" +
                     //生成动态id,根据id将不同的描述信息渲染到不同的模块下面
                     "<ul id='" + info.id + "'>" +
                     "</ul> " +
-
-                    " </div>" +
+                    "</div>" +
                     "<div class='col-md-8 col-md-offset-1'>" +
                     "<div class='card'>" +
                     "<table class='table table-hover table-striped' style='text-align: center'>" +
@@ -487,7 +486,7 @@ function setid(id) {
 //初始化修改信息模态框，id为选中的模块
 function initChangeMessage(id) {
     $("#updatemessageName").html(" ");
-    $("#updatemessageName").val(" ");
+    $("#updateMessagename").val(" ");
     $("#updatemessage").html(" ");
     $("#changeid0").val(id);
     $.ajax({
